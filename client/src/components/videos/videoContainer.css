@@ -1,0 +1,5 @@
+.videoContainer {
+  height: 100vh;
+  flex: 2;
+  background: var(--bg-dark);
+}

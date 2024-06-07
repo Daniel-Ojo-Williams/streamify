@@ -1,0 +1,29 @@
+.messageInput {
+  padding: 15px;
+  border-top: 1px solid var(--border);  
+  border-left: 1px solid var(--border);  
+  
+  form {
+    display: flex;
+    background: transparent;
+  }
+  input {
+    padding: 7px;
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+  }
+  
+  
+  button {
+    font-size: 12px;
+    width: 60px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background: var(--blue);
+  }
+}

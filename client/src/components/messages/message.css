@@ -1,0 +1,46 @@
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  .imageAvatar {
+    width: 45px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    
+    img {
+      margin-top: 17px;
+      border-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .usernameText {
+    width: 80%;
+    span {
+      font-size: 12px;
+      color: rgba(172, 172, 172, 0.434);
+    }
+
+    .usernameTime {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text {
+      background: var(--bg-light);
+      color: rgb(172, 172, 172);
+      padding: 5px;
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 100%;
+      width: max-content;
+      word-wrap: break-word;
+      word-break: break-all;
+      font-size: 14px;
+    }
+  }
+
+}

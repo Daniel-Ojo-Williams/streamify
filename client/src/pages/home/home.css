@@ -1,0 +1,115 @@
+.homePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .homeContainer {
+    display: flex;
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    padding: 20px 30px;
+    border-radius: 5px;
+    align-items: center;
+
+    .divider {
+      width: 1px;
+      margin-inline: 40px;
+      height: 400px;
+      background: var(--border-light);
+    }
+
+    .meetingId {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        color: white;
+        padding: 10px;
+        background: var(--bg-light2);
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid var(--border-light);
+      }
+
+      button {
+        cursor: pointer;
+        padding: 8px 10px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        align-self: center;
+        background: var(--blue);
+        color: white;
+        transition: all .2s ease;
+
+        &:active {
+          scale: 0.98;
+        }
+      }
+    }
+    
+    .meetingBoxes {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      .meetingBox {
+        cursor: pointer;
+        border-radius: 5px;
+        height: 150px;
+        width: 150px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 15px;
+        color: white;
+        transition: all .2s ease;
+        
+        &:active {
+          scale: 0.98;
+        }
+
+        .texts {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 12px;
+            font-weight: bold;
+          }
+
+          span {
+            font-size: 10px;
+            
+          }
+        }
+        
+        .meetingIcon {
+          width: 40px;
+          background: var(--border);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid var(--border-light)
+        }
+      }
+
+      .create {
+          background: var(--orange);
+        }
+
+        .join {
+          background: var(--blue);
+        }
+
+    }
+  }
+}

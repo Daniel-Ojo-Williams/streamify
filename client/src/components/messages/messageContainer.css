@@ -1,0 +1,35 @@
+.messageContainer {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; */
+  height: 100%;
+
+  .chatHeader {
+    color: rgb(159, 159, 159);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .arrowDown {
+      background: var(--bg-light2);
+      height: 20px;
+      width: 20px;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
